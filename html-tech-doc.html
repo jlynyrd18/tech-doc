@@ -18,14 +18,14 @@
                     <a href="#">Nav Bar</a>
                     <a href="#">Slideshow</a>
                     <a href="#">3 boxes in a row</a>
-                    <a href="#">Charts and Data</a>
-                    <a href="#">3 columns</a>
+                    <a href="#">Linking</a>
+                    <a href="#">Borders</a>
                     <a href="#">Signup Form</a>
                     <a href="#">Font Awesome</a>
                 </nav>
             </div>
         </header>
-        <main>
+        <main id="main-doc">
             <!--Idea for tech doc could be breaking down a pm site in a few spots to help understand it as well.-->
             <section class="main-section" id="introduction">
                 <h3>Introduction</h3>
@@ -39,8 +39,8 @@
                     <li>Navigation</li>
                     <li>Slideshow</li>
                     <li>The 3 boxes that are placed as is thanks to flexbox</li>
-                    <li>Simple charts with data updated everyday</li>
-                    <li>The 3 columns with different news in each one</li>
+                    <li>Linking the other documents to get live data</li>
+                    <li>The borders above and below the columns</li>
                     <li>The form to sign up for news letters</li>
                     <li>Font Awesome</li>
                 </ul>
@@ -59,7 +59,7 @@
                 </code>
                 <p>The first list is horizontal, and when hovered over one with a drop menu it has a list that drops vertically.</p>
             </section>
-            <section>
+            <section class="main-section" id="slideshow">
                 <h3>Slideshow</h3>
                 <p>The slide show does use html and css, but also javascript. The slideshow is a very common piece of code that is used on many websites. We will be breaking down the slideshow a little bit for retention.
                 The HTML side of the slideshow is one div class acting as a container, and each div within the container contains an image. Example:</p>
@@ -70,10 +70,47 @@
                     div image-3 /div
                     /div
                 </code>
-                <p>The HTML is easier to construct once you understand it. The div tag is very common and very helpful with making containers.</p>
+                <p>The HTML is easier to construct once you understand it. The div tag is very common and very helpful with making containers. There is also CSS and Javascript, but CSS is just the decoration and Javascript 
+                is something I haven't learned yet.</p>
             </section>
-            <section>
-
+            <section class="main-section" id="3-boxes">
+                <h3>3 Boxes</h3>
+                <p>The three boxes labeled bullion made simple, exceptional service, and built for investors are lined up by making it into a flexbox. Each item uses a div tag and that turns them into a box. Flexbox then
+                allows the boxes to be moved and scaled any way that is needed. But flexbox has very similar code in css that is required to turn it into flexbox. The basic that is needed in css is:</p>
+                <code>display: flexbox;</code>
+                <p>From there, adjustments are made to all the boxes within the container. Adjustments can be from anything to vertical alignment or horizontal, move left, right, or center. There are so many adjustments that 
+                flexbox adds, that it helps organize ecommerce websites to look a lot cleaner.</p>
+            </section>
+            <section class="main-section" id="charts">
+                <h3>Charts</h3>
+                <p>The charts are done in a backend language which I haven't learned yet, but in order to include it in a web page it is usually needed to be linked in HTML in the head part of the HTML document. It can feel 
+                frustrating at first trying to figure out how to link outside documents, but once it clicks you will know how to link to anything that is kept within the folder that holds all the documents. Within the head tag
+                you will add a link tag that has a rel class which is short for relative, meaning what type of dicument is being linked. Then followed by the location of said document.</p>
+                <code>link rel="stylesheet" href="location of style sheet"</code>
+                <p>This is only part of what is done to get the charts todo what they do. Once someone learns javascript and begins to understand what it can do, there will be more projects that can be done to help improve your 
+                skils.</p>
+            </section>
+            <section class="main-section" id="3-columns">
+                <h3>Columns</h3>
+                <p>A lot like the three boxes, the three columns are able to be made thanks to flexbox. Since that would be repetitive we will focus on the borders at the top of the columns and how that can be achieved. 
+                Making a border is quite simple to make, but the variousions of it can make for some great u.i. on websites. To make a border is all done in css, and after making a couple it's easy to remember how it is made.
+                To create a border in css, all you need to add under a tag is:</p>
+                <code>border: thickness of border, style of border, and color;</code>
+                <p>A simple one for example would be:</p>
+                <code>
+                    p {
+                        border: 5px solid black;
+                    }
+                </code>
+                <p>That would make a solid black border that is five pixels wide around any p tag within the HTML document. Of course if you would like to have a border on just one side of the element you would add a dash then
+                the side you want the border on. Much like this:</p>
+                <code>
+                    footer {
+                        border-top: 5px solid black;
+                    }
+                </code>
+                <p>From my perspective they could have made a boder-top and a border-bottom in the heading of the columns. If you wish to not have corners or want a circle border instead you can add border-radius underneath the 
+                border that was just added.</p>
             </section>
         </main>
         <footer>
