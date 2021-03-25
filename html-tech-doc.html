@@ -11,26 +11,26 @@
     <div>
         <div class="flex-container">
             <div id="nav-div">
-                <nav id="nav-bar">
+                <nav id="navbar">
                     <!--Intro,Navigation, slideshow, 3 boxes in row, charts and data, 3 columns, signup form, and font awesome. Nav bar must be on left side for bigger screens.-->
                     <header id="nav-header">GoldSilver.com Documentation</header>
                     <ul>
-                        <li><a href="Introduction">Introduction</a></li>
-                        <li><a href="Navigation">Navigation</a></li>
-                        <li><a href="Slideshow">Slideshow</a></li>
-                        <li><a href="3_boxes">3 boxes in a row</a></li>
-                        <li><a href="Linking">Linking</a></li>
-                        <li><a href="Borders">Borders</a></li>
-                        <li><a href="Signup_Form">Signup Form</a></li>
-                        <li><a href="Font_Awesome">Font Awesome</a></li>
-                        <li><a href="References">References</a></li>
+                        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+                        <li><a href="#Navigation" class="nav-link">Navigation</a></li>
+                        <li><a href="#Slideshow" class="nav-link">Slideshow</a></li>
+                        <li><a href="#3_boxes" class="nav-link">3 boxes in a row</a></li>
+                        <li><a href="#Linking" class="nav-link">Linking</a></li>
+                        <li><a href="#Borders" class="nav-link">Borders</a></li>
+                        <li><a href="#Signup_Forms" class="nav-link">Signup Forms</a></li>
+                        <li><a href="#Font_Awesome" class="nav-link">Font Awesome</a></li>
+                        <li><a href="#References" class="nav-link">References</a></li>
                     </ul>
                 </nav>
             </div>
             <main id="main-doc">
                 <!--Idea for tech doc could be breaking down a pm site in a few spots to help understand it as well.-->
-                <section class="main-section">
-                    <header id="Introduction">Introduction</header>
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
                     <p>
                         Gold and silver have become a big part of my life over the past couple years, as has coding. I have been building sites that inform, and linking to sites that sell gold and silver. But I have never looked into
                         how those sites were made. Breaking something down and trying to explain how it works feels like a first esecially in coding. I will be breaking down at least five parts of
@@ -47,8 +47,8 @@
                         <li>Font Awesome</li>
                     </ul>
                 </section>
-                <section class="main-section">
-                    <header id="Navigation">Navigation</header>
+                <section class="main-section" id="Navigation">
+                    <header>Navigation</header>
                     <p>
                         The navigation bar on this site actually has a header above it. The bar that we want is the one that lists buy, sell, storage, ira, news, resources, and about. Without hovering over it, it could look like a
                         standard navigation bar. When the mouse hovers over parts of the navigation bar a drop down menu appears to give mroe detailed options. Our focus is just the navigation bar and the drop down menus. The navigation
@@ -65,8 +65,8 @@
                     </div>
                     <p>The first list is horizontal, and when hovered over one with a drop menu it has a list that drops vertically.</p>
                 </section>
-                <section class="main-section">
-                    <header id="Slideshow">Slideshow</header>
+                <section class="main-section" id="Slideshow">
+                    <header>Slideshow</header>
                     <p>
                         The slide show does use html and css, but also javascript. The slideshow is a very common piece of code that is used on many websites. We will be breaking down the slideshow a little bit for retention.
                         The HTML side of the slideshow is one div class acting as a container, and each div within the container contains an image. Example:
@@ -85,8 +85,8 @@
                         is something I haven't learned yet.
                     </p>
                 </section>
-                <section class="main-section">
-                    <header id="3_boxes">3 Boxes</header>
+                <section class="main-section" id="3_boxes">
+                    <header>3 Boxes</header>
                     <p>
                         The three boxes labeled bullion made simple, exceptional service, and built for investors are lined up by making it into a flexbox. Each item uses a div tag and that turns them into a box. Flexbox then
                         allows the boxes to be moved and scaled any way that is needed. But flexbox has very similar code in css that is required to turn it into flexbox. The basic that is needed in css is:
@@ -99,8 +99,8 @@
                         flexbox adds, that it helps organize ecommerce websites to look a lot cleaner.
                     </p>
                 </section>
-                <section class="main-section">
-                    <header id="Linking">Linking</header>
+                <section class="main-section" id="Linking">
+                    <header>Linking</header>
                     <p>
                         The charts are done in a backend language which I haven't learned yet, but in order to include it in a web page it is usually needed to be linked in HTML in the head part of the HTML document. It can feel
                         frustrating at first trying to figure out how to link outside documents, but once it clicks you will know how to link to anything that is kept within the folder that holds all the documents. Within the head tag
@@ -114,8 +114,8 @@
                         skils.
                     </p>
                 </section>
-                <section class="main-section">
-                    <header id="Borders">Borders</header>
+                <section class="main-section" id="Borders">
+                    <header>Borders</header>
                     <p>
                         A lot like the three boxes, the three columns are able to be made thanks to flexbox. Since that would be repetitive we will focus on the borders at the top of the columns and how that can be achieved.
                         Making a border is quite simple to make, but the variousions of it can make for some great u.i. on websites. To make a border is all done in css, and after making a couple it's easy to remember how it is made.
@@ -148,8 +148,8 @@
                         border that was just added.
                     </p>
                 </section>
-                <section class="main-section">
-                    <header id="Signup_Forms">Signup Forms</header>
+                <section class="main-section" id="Signup_Forms">
+                    <header>Signup Forms</header>
                     <p>
                         A basic sign up form is fairly simple to make. Forms are used a lot in HTML. The form tag wraps around the user input fields as well as label tags. Forms usually wrap around a field of user input fields that
                         require a response like name, number, and address. It can even be used for quizzes that are online. Here's what it looks like:
@@ -169,8 +169,8 @@
                         only need one input and label tag.
                     </p>
                 </section>
-                <section class="main-section">
-                    <header id="Font_Awesome">Font Awesome</header>
+                <section class="main-section" id="Font_Awesome">
+                    <header>Font Awesome</header>
                     <p>
                         Font awesome is the clickable links usually at the bottom of any webpage. They are vector images and social logos that can be just about anything, and many more are still being created. In order to use Font
                         Awesome you will have to sign up on their website <a href="https://fontawesome.com/">here.</a> They are usually within an i tag or span tag. After signing up for Font Awesome they will give you a link that you
@@ -191,8 +191,8 @@
                     <i class="fab fa-empire fa-3x"></i>
                     <p>As you can see they can cover just about anything, and many more are being developed.</p>
                 </section>
-                <section class="main-section">
-                    <header id="References">References</header>
+                <section class="main-section" id="References">
+                    <header>References</header>
                     <h3>Here is a list of all the websites used for references.</h3>
                     <ul>
                         <li><a href="https://goldsilver.com/">Goldsilver.com</a></li>
