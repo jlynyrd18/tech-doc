@@ -9,129 +9,199 @@
 </head>
 <body>
     <div>
-        <header>
+        <div>
             <div id="nav-div">
-                <h1>GoldSilver.com Documentation</h1>
                 <nav id="nav-bar">
                     <!--Intro,Navigation, slideshow, 3 boxes in row, charts and data, 3 columns, signup form, and font awesome. Nav bar must be on left side for bigger screens.-->
-                    <a href="#">Introduction</a>
-                    <a href="#">Nav Bar</a>
-                    <a href="#">Slideshow</a>
-                    <a href="#">3 boxes in a row</a>
-                    <a href="#">Linking</a>
-                    <a href="#">Borders</a>
-                    <a href="#">Signup Form</a>
-                    <a href="#">Font Awesome</a>
+                    <header id="nav-header">GoldSilver.com Documentation</header>
+                    <ul>
+                        <li><a href="Introduction">Introduction</a></li>
+                        <li><a href="Navigation">Navigation</a></li>
+                        <li><a href="Slideshow">Slideshow</a></li>
+                        <li><a href="3_boxes">3 boxes in a row</a></li>
+                        <li><a href="Linking">Linking</a></li>
+                        <li><a href="Borders">Borders</a></li>
+                        <li><a href="Signup_Form">Signup Form</a></li>
+                        <li><a href="Font_Awesome">Font Awesome</a></li>
+                        <li><a href="References">References</a></li>
+                    </ul>
                 </nav>
             </div>
-        </header>
-        <main id="main-doc">
-            <!--Idea for tech doc could be breaking down a pm site in a few spots to help understand it as well.-->
-            <section class="main-section" id="introduction">
-                <h3>Introduction</h3>
-                <p>
-                    Gold and silver have become a big part of my life over the past couple years, as has coding. I have been building sites that inform, and linking to sites that sell gold and silver. But I have never looked into
-                    how those sites were made. Breaking something down and trying to explain how it works feels like a first esecially in coding. I will be breaking down at least five parts of
-                    <a href="https://goldsilver.com/" target="_blank">GoldSilver.com</a>since it is one of my favorite sites to browse for news of gold and silver.
-                </p>
-                <h5>What parts of the site I'm breaking down</h5>
-                <ul>
-                    <li>Navigation</li>
-                    <li>Slideshow</li>
-                    <li>The 3 boxes that are placed as is thanks to flexbox</li>
-                    <li>Linking the other documents to get live data</li>
-                    <li>The borders above and below the columns</li>
-                    <li>The form to sign up for news letters</li>
-                    <li>Font Awesome</li>
-                </ul>
-            </section>
-            <section class="main-section" id="nav-bar">
-                <h3>Navigation</h3>
-                <p>The navigation bar on this site actually has a header above it. The bar that we want is the one that lists buy, sell, storage, ira, news, resources, and about. Without hovering over it, it could look like a
-                standard navigation bar. When the mouse hovers over parts of the navigation bar a drop down menu appears to give mroe detailed options. Our focus is just the navigation bar and the drop down menus. The navigation
-                bar is a list, and the drop down menus are another list within the first list. Here's an example:</p>
-                <code>
-                    Header:h3 Toppings on sandwhich h3<br />
-                    unodered list: ul cheese, meat, vegetables, and sauces ul<br />
-                    sub unordered list for cheese: ul american, peperjack, provolone, cheddar, etc. ul<br />
-                    sub unordered list for meat: ul turkey, ham, chicken, etc. ul<br />
-                    sub unordered list for vegetables: ul lettuce, spinach, peppers, olives, pickles, etc. ul
-                </code>
-                <p>The first list is horizontal, and when hovered over one with a drop menu it has a list that drops vertically.</p>
-            </section>
-            <section class="main-section" id="slideshow">
-                <h3>Slideshow</h3>
-                <p>The slide show does use html and css, but also javascript. The slideshow is a very common piece of code that is used on many websites. We will be breaking down the slideshow a little bit for retention.
-                The HTML side of the slideshow is one div class acting as a container, and each div within the container contains an image. Example:</p>
-                <code>
-                    div class="container" <br />
-                    div image-1 /div <br /> 
-                    div image-2 /div <br />
-                    div image-3 /div
-                    /div
-                </code>
-                <p>The HTML is easier to construct once you understand it. The div tag is very common and very helpful with making containers. There is also CSS and Javascript, but CSS is just the decoration and Javascript 
-                is something I haven't learned yet.</p>
-            </section>
-            <section class="main-section" id="3-boxes">
-                <h3>3 Boxes</h3>
-                <p>The three boxes labeled bullion made simple, exceptional service, and built for investors are lined up by making it into a flexbox. Each item uses a div tag and that turns them into a box. Flexbox then
-                allows the boxes to be moved and scaled any way that is needed. But flexbox has very similar code in css that is required to turn it into flexbox. The basic that is needed in css is:</p>
-                <code>display: flexbox;</code>
-                <p>From there, adjustments are made to all the boxes within the container. Adjustments can be from anything to vertical alignment or horizontal, move left, right, or center. There are so many adjustments that 
-                flexbox adds, that it helps organize ecommerce websites to look a lot cleaner.</p>
-            </section>
-            <section class="main-section" id="charts">
-                <h3>Charts</h3>
-                <p>The charts are done in a backend language which I haven't learned yet, but in order to include it in a web page it is usually needed to be linked in HTML in the head part of the HTML document. It can feel 
-                frustrating at first trying to figure out how to link outside documents, but once it clicks you will know how to link to anything that is kept within the folder that holds all the documents. Within the head tag
-                you will add a link tag that has a rel class which is short for relative, meaning what type of dicument is being linked. Then followed by the location of said document.</p>
-                <code>link rel="stylesheet" href="location of style sheet"</code>
-                <p>This is only part of what is done to get the charts todo what they do. Once someone learns javascript and begins to understand what it can do, there will be more projects that can be done to help improve your 
-                skils.</p>
-            </section>
-            <section class="main-section" id="3-columns">
-                <h3>Columns</h3>
-                <p>A lot like the three boxes, the three columns are able to be made thanks to flexbox. Since that would be repetitive we will focus on the borders at the top of the columns and how that can be achieved. 
-                Making a border is quite simple to make, but the variousions of it can make for some great u.i. on websites. To make a border is all done in css, and after making a couple it's easy to remember how it is made.
-                To create a border in css, all you need to add under a tag is:</p>
-                <code>border: thickness of border, style of border, and color;</code>
-                <p>A simple one for example would be:</p>
-                <code>
-                    p {
-                        border: 5px solid black;
-                    }
-                </code>
-                <p>That would make a solid black border that is five pixels wide around any p tag within the HTML document. Of course if you would like to have a border on just one side of the element you would add a dash then
-                the side you want the border on. Much like this:</p>
-                <code>
-                    footer {
-                        border-top: 5px solid black;
-                    }
-                </code>
-                <p>From my perspective they could have made a boder-top and a border-bottom in the heading of the columns. If you wish to not have corners or want a circle border instead you can add border-radius underneath the 
-                border that was just added.</p>
-            </section>
-            <section class="main-section" id="form">
-                <h3>Signup Forms</h3>
-                <p>A basic sign up form is fairly simple to make. Forms are used a lot in HTML. The form tag wraps around the user input fields as well as label tags. Forms usually wrap around a field of user input fields that 
-                require a response like name, number, and address. It can even be used for quizzes that are online. Here's what it looks like:</p>
-                <code>
-                    form <br />
-                    label for="fname">First name: /label<br />
-                    input type="text" id="fname" name="fname" <br />
-                    label for="lname">Last name: /label <br />
-                    input type="text" id="lname" name="lname"<br />
-                    /form
-                </code>
-                <p>The form itself is not visible, and also each input field is the width of twenty characters. The form above simply asks for first and last name. To set up a sign up form the type would change, and you would 
-                only need one input and label tag.</p>
-            </section>
-        </main>
-        <footer>
-            <p>Jordan Leonard</p>
-            <i class= "fab fa-github"></i>
-        </footer>
+            <main id="main-doc">
+                <!--Idea for tech doc could be breaking down a pm site in a few spots to help understand it as well.-->
+                <section class="main-section">
+                    <header id="Introduction">Introduction</header>
+                    <p>
+                        Gold and silver have become a big part of my life over the past couple years, as has coding. I have been building sites that inform, and linking to sites that sell gold and silver. But I have never looked into
+                        how those sites were made. Breaking something down and trying to explain how it works feels like a first esecially in coding. I will be breaking down at least five parts of
+                        <a href="https://goldsilver.com/" target="_blank">GoldSilver.com</a> since it is one of my favorite sites to browse for news of gold and silver.
+                    </p>
+                    <h3>How some parts work in HTML</h3>
+                    <ul>
+                        <li>Navigation</li>
+                        <li>Slideshow</li>
+                        <li>The 3 boxes in a row</li>
+                        <li>Linking the other documents</li>
+                        <li>The borders above and below the columns</li>
+                        <li>The signup form</li>
+                        <li>Font Awesome</li>
+                    </ul>
+                </section>
+                <section class="main-section">
+                    <header id="Navigation">Navigation</header>
+                    <p>
+                        The navigation bar on this site actually has a header above it. The bar that we want is the one that lists buy, sell, storage, ira, news, resources, and about. Without hovering over it, it could look like a
+                        standard navigation bar. When the mouse hovers over parts of the navigation bar a drop down menu appears to give mroe detailed options. Our focus is just the navigation bar and the drop down menus. The navigation
+                        bar is a list, and the drop down menus are another list within the first list. Here's an example:
+                    </p>
+                    <div class="div-code">
+                        <code>
+                            Header:h3 Toppings on sandwhich h3<br />
+                            unodered list: ul cheese, meat, vegetables, and sauces ul<br />
+                            sub unordered list for cheese: ul american, peperjack, provolone, cheddar, etc. ul<br />
+                            sub unordered list for meat: ul turkey, ham, chicken, etc. ul<br />
+                            sub unordered list for vegetables: ul lettuce, spinach, peppers, olives, pickles, etc. ul
+                        </code>
+                    </div>
+                    <p>The first list is horizontal, and when hovered over one with a drop menu it has a list that drops vertically.</p>
+                </section>
+                <section class="main-section">
+                    <header id="Slideshow">Slideshow</header>
+                    <p>
+                        The slide show does use html and css, but also javascript. The slideshow is a very common piece of code that is used on many websites. We will be breaking down the slideshow a little bit for retention.
+                        The HTML side of the slideshow is one div class acting as a container, and each div within the container contains an image. Example:
+                    </p>
+                    <div class="div-code">
+                        <code>
+                            div class="container" <br />
+                            div image-1 /div <br />
+                            div image-2 /div <br />
+                            div image-3 /div
+                            /div
+                        </code>
+                    </div>
+                    <p>
+                        The HTML is easier to construct once you understand it. The div tag is very common and very helpful with making containers. There is also CSS and Javascript, but CSS is just the decoration and Javascript
+                        is something I haven't learned yet.
+                    </p>
+                </section>
+                <section class="main-section">
+                    <header id="3_boxes">3 Boxes</header>
+                    <p>
+                        The three boxes labeled bullion made simple, exceptional service, and built for investors are lined up by making it into a flexbox. Each item uses a div tag and that turns them into a box. Flexbox then
+                        allows the boxes to be moved and scaled any way that is needed. But flexbox has very similar code in css that is required to turn it into flexbox. The basic that is needed in css is:
+                    </p>
+                    <div class="div-code">
+                        <code>display: flexbox;</code>
+                    </div>
+                    <p>
+                        From there, adjustments are made to all the boxes within the container. Adjustments can be from anything to vertical alignment or horizontal, move left, right, or center. There are so many adjustments that
+                        flexbox adds, that it helps organize ecommerce websites to look a lot cleaner.
+                    </p>
+                </section>
+                <section class="main-section">
+                    <header id="Linking">Linking</header>
+                    <p>
+                        The charts are done in a backend language which I haven't learned yet, but in order to include it in a web page it is usually needed to be linked in HTML in the head part of the HTML document. It can feel
+                        frustrating at first trying to figure out how to link outside documents, but once it clicks you will know how to link to anything that is kept within the folder that holds all the documents. Within the head tag
+                        you will add a link tag that has a rel class which is short for relative, meaning what type of dicument is being linked. Then followed by the location of said document.
+                    </p>
+                    <div class="div-code">
+                        <code>link rel="stylesheet" href="location of style sheet"</code>
+                    </div>
+                    <p>
+                        This is only part of what is done to get the charts todo what they do. Once someone learns javascript and begins to understand what it can do, there will be more projects that can be done to help improve your
+                        skils.
+                    </p>
+                </section>
+                <section class="main-section">
+                    <header id="Borders">Borders</header>
+                    <p>
+                        A lot like the three boxes, the three columns are able to be made thanks to flexbox. Since that would be repetitive we will focus on the borders at the top of the columns and how that can be achieved.
+                        Making a border is quite simple to make, but the variousions of it can make for some great u.i. on websites. To make a border is all done in css, and after making a couple it's easy to remember how it is made.
+                        To create a border in css, all you need to add under a tag is:
+                    </p>
+                    <div class="div-code">
+                        <code>border: thickness of border, style of border, and color;</code>
+                    </div>
+                    <p>A simple one for example would be:</p>
+                    <div class="div-code">
+                        <code>
+                            p {
+                            border: 5px solid black;
+                            }
+                        </code>
+                    </div>
+                    <p>
+                        That would make a solid black border that is five pixels wide around any p tag within the HTML document. Of course if you would like to have a border on just one side of the element you would add a dash then
+                        the side you want the border on. Much like this:
+                    </p>
+                    <div class="div-code">
+                        <code>
+                            footer {
+                            border-top: 5px solid black;
+                            }
+                        </code>
+                    </div>
+                    <p>
+                        From my perspective they could have made a boder-top and a border-bottom in the heading of the columns. If you wish to not have corners or want a circle border instead you can add border-radius underneath the
+                        border that was just added.
+                    </p>
+                </section>
+                <section class="main-section">
+                    <header id="Signup_Forms">Signup Forms</header>
+                    <p>
+                        A basic sign up form is fairly simple to make. Forms are used a lot in HTML. The form tag wraps around the user input fields as well as label tags. Forms usually wrap around a field of user input fields that
+                        require a response like name, number, and address. It can even be used for quizzes that are online. Here's what it looks like:
+                    </p>
+                    <div class="div-code">
+                        <code>
+                            form <br />
+                            label for="fname">First name: /label<br />
+                            input type="text" id="fname" name="fname" <br />
+                            label for="lname">Last name: /label <br />
+                            input type="text" id="lname" name="lname"<br />
+                            /form
+                        </code>
+                    </div>
+                    <p>
+                        The form itself is not visible, and also each input field is the width of twenty characters. The form above simply asks for first and last name. To set up a sign up form the type would change, and you would
+                        only need one input and label tag.
+                    </p>
+                </section>
+                <section class="main-section">
+                    <header id="Font_Awesome">Font Awesome</header>
+                    <p>
+                        Font awesome is the clickable links usually at the bottom of any webpage. They are vector images and social logos that can be just about anything, and many more are still being created. In order to use Font
+                        Awesome you will have to sign up on their website <a href="https://fontawesome.com/">here.</a> They are usually within an i tag or span tag. After signing up for Font Awesome they will give you a link that you
+                        must link to in your head tag of the HTML document. There are so many icons within Font Awesome that some of them you will recognize from somewhere. Typing them out would look like this:
+                    </p>
+                    <div class="div-code">
+                        <code>
+                            i class="fab fa-apple" /i<br />
+                            i class="fab fa-bitcoin" /i <br />
+                            i class="fab fa-bluetooth" /i<br />
+                            i class="fab fa-empire" /i
+                        </code>
+                    </div>
+                    <p>Those are just some of the images you can get from Font Awesome. Here's what they would look like in actual images:</p>
+                    <i class="fab fa-apple"></i>
+                    <i class="fab fa-bitcoin"></i>
+                    <i class="fab fa-bluetooth"></i>
+                    <i class="fab fa-empire"></i>
+                    <p>As you can see they can cover just about anything, and many more are being developed.</p>
+                </section>
+                <section class="main-section">
+                    <header id="References">References</header>
+                    <h3>Here is a list of all the websites used for references.</h3>
+                    <ul>
+                        <li><a href="https://goldsilver.com/">Goldsilver.com</a></li>
+                        <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+                        <li><a href="https://www.w3schools.com/default.asp">w3schools</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 </html>
