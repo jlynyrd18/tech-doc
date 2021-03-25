@@ -1,10 +1,12 @@
 ﻿body {
-    min-width: 290px;
+    
 }
 code {
     white-space: pre-line;
     word-wrap: normal;
-    margin: 10px;
+}
+h3 {
+    font-weight: lighter;
 }
 .div-code {
     background-color: antiquewhite;
@@ -16,55 +18,31 @@ code {
 }
 /*Nav bar to left side for bigger screens*/
 #nav-bar {
-    position: fixed;
-    min-width: 290px;
-    top: 0px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    margin-top: 10px;
+    overflow: hidden;
 }
 #nav-bar ul {
     height: 75%;
-    text-align: center;
-    width: 75%;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 #nav-bar li {
     list-style: none;
-    border-top: 1px solid black;
-    font-size: 24px;
-    width: 100%;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
 }
 #nav-bar a {
     color: black;
     text-decoration: none;
-    display: block;
 }
-#main-doc{
-    position: absolute;
-    margin-left: 310px;
-    padding: 20px;
-    margin-bottom: 110px;
+#main-doc header {
+    font-size: 24px;
 }
 /*775px navbar to left side of web page*/
-@media screen and (max-width: 775px) {
-    #nav-bar ul {
-        height: 207px;
-    }
-    #nav-bar {
-        position: absolute;
-        top: 0;
-        margin: 0;
-        width: 100%;
-        max-height: 275px;
-        z-index: 1;
+@media screen and (min-width: 775px) {
+    .flex-container {
+        display: flex;
+        justify-content: center;
     }
     #main-doc {
-        position: relative;
-        margin-left: 0px;
-        margin-top: 500px;
+        margin-left: 10px;
     }
 }
